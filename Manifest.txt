@@ -1,0 +1,14 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/pg_migrations.rb
+lib/pg_migrations/migrations_helper.rb
+script/console
+script/destroy
+script/generate
+spec/pg_migrations_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake

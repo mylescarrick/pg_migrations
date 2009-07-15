@@ -1,0 +1,5 @@
+
+For more information on pg_migration, see http://pg_migrations.rubyforge.org
+
+
+
