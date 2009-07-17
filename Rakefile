@@ -14,7 +14,7 @@ $hoe = Hoe.spec 'pg_migrations' do
   self.developer 'Myles Carrick', 'mylescarrick@gmail.com'
   self.post_install_message = 'PostInstall.txt'
   self.rubyforge_name       = self.name
-  self.version = PgMigrations::VERSION
+  self.version = PgMigrations::GEM_VERSION
 end
 
 require 'newgem/tasks'
