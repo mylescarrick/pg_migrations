@@ -1,6 +1,7 @@
 module ActiveRecord
-  class Migration
-    def add_foreign_key(from_table, from_column, to_table, cascade_on_delete=false)
+  module ConnectionAdapters
+    class AbstractAdapter
+    def add_foreign_key(from_table, from_column, to_table, options = {})
       constraint_name = "fk_#{from_table}_#{from_column}"
 
       sql= %{ALTER TABLE #{from_table}
@@ -8,7 +9,7 @@ module ActiveRecord
                 FOREIGN KEY (#{from_column})
                 REFERENCES #{to_table}(id)
                 ON UPDATE RESTRICT}
-      sql << " ON DELETE CASCADE DEFERRABLE INITIALLY DEFERRED" if cascade_on_delete
+      sql << " ON DELETE CASCADE DEFERRABLE INITIALLY DEFERRED" if options[:cascade_delete]
       execute sql
     end
 
@@ -50,4 +51,5 @@ module ActiveRecord
                  ALTER COLUMN #{column} DROP NOT NULL}
     end
   end
-end
+  end
+  end
