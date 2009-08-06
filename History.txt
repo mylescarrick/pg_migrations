@@ -2,3 +2,8 @@
 
 * 1 major enhancement:
   * Initial release
+
+== 0.0.2 2009-07-21
+
+* Actually works now
+  * Some passing tests and stubs

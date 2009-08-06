@@ -8,6 +8,10 @@ lib/pg_migrations/migrations_helper.rb
 script/console
 script/destroy
 script/generate
+spec/fixtures/blueprints.rb
+spec/fixtures/blueprints_helper.rb
+spec/fixtures/migration_scaffold.rb
+spec/fixtures/models.rb
 spec/pg_migrations_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
