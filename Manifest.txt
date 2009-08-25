@@ -5,6 +5,7 @@ README.rdoc
 Rakefile
 lib/pg_migrations.rb
 lib/pg_migrations/migrations_helper.rb
+pg_migrations.gemspec
 script/console
 script/destroy
 script/generate
