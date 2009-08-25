@@ -1,5 +1,5 @@
 require File.join(File.dirname(__FILE__),'pg_migrations/migrations_helper')
 
 class PgMigrations
-  GEM_VERSION = '0.0.2'
+  GEM_VERSION = '0.0.3'
 end
